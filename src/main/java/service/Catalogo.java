@@ -4,7 +4,6 @@ import model.*;
 import exceptions.*;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Catalogo<T extends Recurso> {
 
