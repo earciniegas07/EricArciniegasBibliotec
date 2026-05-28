@@ -6,7 +6,7 @@ public class Revista
         extends Recurso
         implements Prestable {
 
-    private int numero;
+    private int numero_edicion;
     private String editorial;
     private String autor;
     private String isbn;
@@ -16,7 +16,7 @@ public class Revista
             String codigo,
             String titulo,
             int anio,
-            int numero,
+            int numero_edicion,
             String editorial)
             throws RecursoNoPrestableException {
 
@@ -29,7 +29,7 @@ public class Revista
             );
         }
 
-        this.numero = numero;
+        this.numero_edicion = numero_edicion;
         this.editorial = editorial;
     }
 
