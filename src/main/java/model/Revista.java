@@ -7,7 +7,7 @@ public class Revista
         implements Prestable {
 
     private int numero;
-    private String tema;
+    private String editorial;
     private String autor;
     private String isbn;
     private String usuarioPrestado;
@@ -17,7 +17,7 @@ public class Revista
             String titulo,
             int anio,
             int numero,
-            String tema)
+            String editorial)
             throws RecursoNoPrestableException {
 
         super(codigo, titulo, anio);
@@ -30,7 +30,7 @@ public class Revista
         }
 
         this.numero = numero;
-        this.tema = tema;
+        this.editorial = editorial;
     }
 
     @Override
